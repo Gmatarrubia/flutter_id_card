@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
-            children: <Widget> [
+            children: <Widget>[
               CircleAvatar(
                 radius: 80.0,
                 backgroundImage: AssetImage("images/avatar.jpg"),
@@ -32,7 +32,8 @@ class MyApp extends StatelessWidget {
                   color: HexColor("#053856"),
                 ),
               ),
-              Text("CEO & Co-funder",
+              Text(
+                "CEO & Co-funder at Asysnet",
                 style: TextStyle(
                   fontFamily: 'ubuntu',
                   fontSize: 30.0,
@@ -41,65 +42,56 @@ class MyApp extends StatelessWidget {
               ),
               SizedBox(
                 height: 20.0,
+                width: 200.0,
+                child: Divider(
+                  color: HexColor("#36c874"),
+                  ),
               ),
               Container(
-                height: 50.0,
-                width: 380.0,
+                margin: EdgeInsets.symmetric(horizontal:20.0, vertical: 5.0),
+                decoration: BoxDecoration(
+                  color: Colors.blueGrey,
+                  border: Border.all(color: Colors.black, width: 3),
+                  borderRadius: BorderRadius.all(Radius.circular(18)),
+                ),
+                child: ListTile(
+                  leading: Icon(
+                    Icons.phone,
+                    color: HexColor("#36c874"),
+                    size: 30.0,
+                  ),
+                  title: Text(
+                    "+34 649 816 396",
+                    style: TextStyle(
+                      fontFamily: 'ubuntu',
+                      fontSize: 25.0,
+                      color: Colors.black,
+                    ),
+                  ),
+                ),
+              ),
+              Container(
+                margin: EdgeInsets.symmetric(horizontal:20.0, vertical: 5.0),
                 alignment: Alignment.center,
                 decoration: BoxDecoration(
                   color: Colors.blueGrey,
                   border: Border.all(color: Colors.black, width: 3),
                   borderRadius: BorderRadius.all(Radius.circular(18)),
                 ),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: <Widget> [
-                    Icon(
-                      Icons.phone,
-                      color: HexColor("#36c874"),
-                      size: 30.0,
+                child: ListTile(
+                  leading: Icon(
+                    Icons.email,
+                    color: HexColor("#36c874"),
+                    size: 30.0,
+                  ),
+                  title: Text(
+                    "g.matarrubia@asysnet.es",
+                    style: TextStyle(
+                      fontFamily: 'ubuntu',
+                      fontSize: 25.0,
+                      color: Colors.black,
                     ),
-                    SizedBox(
-                      width: 20.0,
-                    ),
-                    Text("+34 649 816 396",
-                      style: TextStyle(
-                        fontFamily: 'ubuntu',
-                        fontSize: 25.0,
-                        color: Colors.black,
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-              Container(
-                height: 50.0,
-                width: 380.0,
-                alignment: Alignment.center,
-                decoration: BoxDecoration(
-                  color: Colors.blueGrey,
-                  border: Border.all(color: Colors.black, width: 3),
-                  borderRadius: BorderRadius.all(Radius.circular(18)),
-                ),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: <Widget> [
-                    Icon(
-                      Icons.email,
-                      color: HexColor("#36c874"),
-                      size: 30.0,
-                    ),
-                    SizedBox(
-                      width: 20.0,
-                    ),
-                    Text("g.matarrubia@asysnet.es",
-                      style: TextStyle(
-                        fontFamily: 'ubuntu',
-                        fontSize: 25.0,
-                        color: Colors.black,
-                      ),
-                    ),
-                  ],
+                  ),
                 ),
               ),
             ],
