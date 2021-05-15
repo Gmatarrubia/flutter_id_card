@@ -35,7 +35,7 @@ class MyApp extends StatelessWidget {
                   ),
                 ),
                 Text(
-                  "CEO & Co-funder at Asysnet",
+                  "CEO & Co-founder at Asysnet",
                   style: TextStyle(
                     fontFamily: 'ubuntu',
                     fontSize: 30.0,
