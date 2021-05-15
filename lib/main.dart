@@ -10,7 +10,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        backgroundColor: HexColor("#48a3ca"),
+        backgroundColor: HexColor("#053856"),
         body: Center(
           child: Container(
             width: 600.0,
@@ -18,9 +18,17 @@ class MyApp extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.center,
               children: <Widget>[
-                CircleAvatar(
-                  radius: 80.0,
-                  backgroundImage: AssetImage("images/avatar.jpg"),
+                Stack(
+                  alignment: Alignment.center,
+                  children: <Widget> [
+                    Image(
+                      image: AssetImage("images/asysnetLogo.png"),
+                    ),
+                    CircleAvatar(
+                      radius: 80.0,
+                      backgroundImage: AssetImage("images/avatar.jpg"),
+                    ),
+                  ]
                 ),
                 SizedBox(
                   height: 20.0,
@@ -31,7 +39,7 @@ class MyApp extends StatelessWidget {
                   style: TextStyle(
                     fontFamily: 'monoton',
                     fontSize: 40.0,
-                    color: HexColor("#053856"),
+                    color: Colors.white60,
                   ),
                 ),
                 Text(
@@ -39,14 +47,14 @@ class MyApp extends StatelessWidget {
                   style: TextStyle(
                     fontFamily: 'ubuntu',
                     fontSize: 30.0,
-                    color: HexColor("#053856"),
+                    color: HexColor("#36c874"),
                   ),
                 ),
                 SizedBox(
                   height: 20.0,
                   width: 200.0,
                   child: Divider(
-                    color: HexColor("#36c874"),
+                    color: Colors.black,
                     ),
                 ),
                 Container(

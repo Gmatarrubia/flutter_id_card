@@ -21,6 +21,7 @@ flutter:
 
   assets:
    - images/avatar.jpg
+   - images/asysnetLogo.png
 
   fonts:
     - family: ubuntu
