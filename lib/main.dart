@@ -18,17 +18,9 @@ class MyApp extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.center,
               children: <Widget>[
-                Stack(
-                  alignment: Alignment.center,
-                  children: <Widget> [
-                    Image(
-                      image: AssetImage("images/asysnetLogo.png"),
-                    ),
-                    CircleAvatar(
-                      radius: 80.0,
-                      backgroundImage: AssetImage("images/avatar.jpg"),
-                    ),
-                  ]
+                CircleAvatar(
+                  radius: 80.0,
+                  backgroundImage: AssetImage("images/avatar.jpg"),
                 ),
                 SizedBox(
                   height: 20.0,
